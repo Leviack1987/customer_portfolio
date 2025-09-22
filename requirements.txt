@@ -12,6 +12,7 @@ filelock==3.13.1
 Flask==3.1.2
 frozenlist==1.5.0
 fsspec==2024.6.1
+greenlet==3.2.4
 gunicorn==23.0.0
 idna==3.8
 itsdangerous==2.2.0
@@ -30,6 +31,7 @@ packaging==25.0
 pandas==2.3.2
 pillow==11.0.0
 propcache==0.2.1
+psycopg2-binary==2.9.10
 python-dateutil==2.9.0.post0
 pytz==2025.2
 regex==2024.11.6
@@ -38,11 +40,12 @@ scikit-learn==1.6.1
 scipy==1.15.1
 setuptools==70.2.0
 six==1.17.0
+SQLAlchemy==2.0.43
 sympy==1.13.3
 textblob==0.19.0
 threadpoolctl==3.5.0
-torch==2.8.0
-torchvision==0.23.0
+torch==2.8.0+cu126
+torchvision==0.23.0+cu126
 tqdm==4.67.1
 translate==3.6.1
 typing_extensions==4.12.2
