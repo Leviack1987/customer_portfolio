@@ -9,11 +9,11 @@ from psycopg2.extras import RealDictCursor
 
 # Connect to PostgreSQL (replace with your Render credentials)
 conn = psycopg2.connect(
-    host="dpg-d38b8g15pdvs738ec890-a.render.com",
+    host="dpg-d38b8g15pdvs738ec890-a.oregon-postgres.render.com",
     port=5432,
     user="customer_database_90u1_user",
     password="0K54IYnIXIlgtEEJINsEO2DKGjr5JlEy",
-    dbname="customer_database"
+    dbname="customer_database_90u1"
 )
 
 # Load data into pandas
