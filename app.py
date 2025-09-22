@@ -6,15 +6,10 @@ from sklearn.linear_model import LogisticRegression
 from flask import Flask, render_template, request
 import psycopg2
 from psycopg2.extras import RealDictCursor
+import os
 
 # Connect to PostgreSQL (replace with your Render credentials)
-conn = psycopg2.connect(
-    host="dpg-d38b8g15pdvs738ec890-a.oregon-postgres.render.com",
-    port=5432,
-    user="customer_database_90u1_user",
-    password="0K54IYnIXIlgtEEJINsEO2DKGjr5JlEy",
-    dbname="customer_database_90u1"
-)
+conn = psycopg2.connect(os.environ.get("postgresql://neondb_owner:npg_lBF2xWQuPR6v@ep-late-rice-adexnc0d-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"), sslmode='require')
 
 # Load data into pandas
 query = 'SELECT * FROM customers'
