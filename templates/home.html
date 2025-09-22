@@ -19,18 +19,18 @@
     <h2>Predict Customer Churn</h2>
     <form method="post" action="/predict">
         <div>
-            <label for="'age">Age:</label>
-            <input type="number" name="Age" required>
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" required>
         </div>
 
         <div>
-            <label for="lastPurchaseDate">Last Purchase Date</label>
-            <input type="date" name="lastPurchaseDate" required>
+            <label for="lastPurchaseDate">Last Purchase Date:</label>
+            <input type="date" name="lastPurchaseDate" id="lastPurchaseDate" required>
         </div>
 
         <div>
-            <label for="purchase-history">purchase-history</label>
-            <input type="number" name="purchase_history" required>
+            <label for="purchase_history">Purchase History:</label>
+            <input type="number" name="purchase_history" id="purchase_history" required>
         </div>
     
         <button type="submit">Predict</button>
