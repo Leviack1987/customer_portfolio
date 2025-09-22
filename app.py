@@ -9,7 +9,7 @@ from psycopg2.extras import RealDictCursor
 import os
 
 # Connect to PostgreSQL (replace with your Render credentials)
-conn = psycopg2.connect(os.environ.get("postgresql://neondb_owner:npg_lBF2xWQuPR6v@ep-late-rice-adexnc0d-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"), sslmode='require')
+conn = psycopg2.connect(os.environ.get("DATABASE_URL"), sslmode='require')
 
 # Load data into pandas
 query = 'SELECT * FROM customers'
