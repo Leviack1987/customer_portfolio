@@ -9,7 +9,7 @@ from psycopg2.extras import RealDictCursor
 
 # Connect to PostgreSQL (replace with your Render credentials)
 conn = psycopg2.connect(
-    host="dpg-d38b8g15pdvs738ec890-a",
+    host="dpg-d38b8g15pdvs738ec890-a.render.com",
     port=5432,
     user="customer_database_90u1_user",
     password="0K54IYnIXIlgtEEJINsEO2DKGjr5JlEy",
